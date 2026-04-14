@@ -1,0 +1,120 @@
+*{
+    font-family: sans-serif;
+    text-transform: capitalize;
+}
+body{ 
+    background-image: url("image.jpg");
+    background-size: cover;
+    text-align: center;
+    font-family: Arial;
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid white;
+    height: 120vh;
+    margin: 20px;
+}
+header{
+color: rgb(60, 111, 156);
+text-align: center;
+padding: 1px;
+border-radius: 30px;
+}
+nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+} 
+nav ul li a {
+color: rgb(84, 104, 120);
+padding: 10px 10px;
+display: inline-block;
+text-decoration: none;
+}
+nav ul li a:hover{
+    color: lightgray;
+}
+main h2 {
+    color: rgb(60, 111, 156);
+}
+main p {
+    color: rgb(84, 104, 120);
+}
+main li {
+    color: rgb(84, 104, 120);
+    margin-bottom: 5px;
+    list-style: none;
+}
+footer{
+  color:whitesmoke ;
+  text-align:center ;
+  padding: 10px;
+  margin-top: 50px;
+}
+
+
+table{
+    width: 60%;
+    border-collapse:collapse ;
+    margin: auto;
+    background-color: rgb(84, 104, 120);
+}
+th{
+    background-color: lightblue;
+    padding: 10px;
+}
+td{
+    padding: 10px;
+}
+table , th , td {
+    border: 1px solid white;
+}
+tr :hover{
+    background-color: lightgray;
+}
+
+
+form{
+    background-color: rgb(82, 135, 181);
+    width: 300px;
+    margin: auto;
+    padding: 20px;
+    border: 2px solid black;
+}
+input{
+    width: 90%;
+    padding: 5px;
+}
+textarea{
+    width: 90%;
+    height: 60px;
+    border-radius: 8px;
+    border: none;
+}
+button{
+    background-color: lightblue;
+    border: none;
+    width: 120px;
+    padding: 6px;
+    font-size: 14px;
+    cursor: pointer;
+}
+button:hover{
+ background: blue;
+ color: azure;
+}
+@media(max-width:768px){
+    nav ul,a{
+        text-align: center;
+        flex-direction: column;
+    }
+    form{
+        width: 50%;
+    }
+    table{
+        font-size: 12px;
+    }
+    th,td{
+        padding: 5px;
+    }
+}
